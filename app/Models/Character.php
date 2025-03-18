@@ -11,7 +11,9 @@ class Character extends Model
 
     protected $fillable = [
         'name',
+        'gender',
         'band',
+        'level',
         'ateDevilFruit',
         'whichFruit',
     ];
