@@ -19,7 +19,6 @@ return new class extends Migration
 			$table->enum('band', ['pirate', 'marine', 'unknown'])->default('unknown');
 			$table->enum('level', ['low', 'medium', 'high'])->default('low');
 			$table->boolean('ateDevilFruit');
-			$table->json('whichFruit')->nullable();
 			$table->timestamps();
 		});
 	}

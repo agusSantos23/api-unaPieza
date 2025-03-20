@@ -15,10 +15,11 @@ class Character extends Model
         'band',
         'level',
         'ateDevilFruit',
-        'whichFruit',
     ];
 
-    protected $casts = [
-        'whichFruit' => 'array',  
-    ];
+    public function devilFruits()
+    {
+        return $this->hasMany(DevilFruit::class);
+    }
+
 }
